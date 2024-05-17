@@ -21,7 +21,7 @@
                uses: trstringer/manual-approval@v1
                with:
                  secret: ${{ secrets.GITHUB_TOKEN }}
-                 approvers: suriyakanth1,SureshM1100
+                 approvers: SureshM1100
                  minimum-approvals: 1
                  exclude-workflow-initiator-as-approver: true
 
