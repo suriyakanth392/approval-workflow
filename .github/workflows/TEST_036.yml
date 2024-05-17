@@ -28,7 +28,7 @@
 
         #---------------- Docker
           DOCKERHUB:
-           needs: [build]
+           needs: [ORCH]
            runs-on: ubuntu-latest
            environment:
               name: DEVELOPMENT
