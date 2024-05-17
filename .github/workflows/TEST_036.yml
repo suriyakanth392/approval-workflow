@@ -13,6 +13,18 @@
                   uses: actions/checkout@v3  
             
 
+          ORCH:
+           needs: [build]
+           runs-on: ubuntu-latest
+           steps:
+             - name: Manual Approval 
+               uses: trstringer/manual-approval@v1
+               with:
+                 secret: ${{ secrets.GITHUB_TOKEN }}
+                 approvers: suriyakanth1,SureshM1100
+                 minimum-approvals: 2
+
+
 
         #---------------- Docker
           DOCKERHUB:
