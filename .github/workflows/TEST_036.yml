@@ -22,7 +22,8 @@
                with:
                  secret: ${{ secrets.GITHUB_TOKEN }}
                  approvers: suriyakanth1,SureshM1100
-                 minimum-approvals: 2
+                 minimum-approvals: 1
+                 exclude-workflow-initiator-as-approver: true
 
 
 
