@@ -23,6 +23,8 @@
                  secret: ${{ secrets.GITHUB_TOKEN }}
                  approvers: SureshM1100
                  minimum-approvals: 1
+                 issue-title: "Manual Approval"
+                 issue-body: "Workflow_id: ${{ github.run_id }}"
                  exclude-workflow-initiator-as-approver: true
 
 
